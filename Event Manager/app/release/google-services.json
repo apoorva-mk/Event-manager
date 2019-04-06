@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "254821405573",
+    "firebase_url": "https://iacm-database.firebaseio.com",
+    "project_id": "iacm-database",
+    "storage_bucket": "iacm-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254821405573:android:8c28e0867899484a",
+        "android_client_info": {
+          "package_name": "com.example.ACM.iACM"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254821405573-mkkh11stgro509j3neavftpq479qnt5d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0k98zHGKzKhQWdVe_5_BZgSP03mqmo-0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

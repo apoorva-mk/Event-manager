@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.NITK.Apoorva.EventManager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:alwaysRetainTaskState="true"
+        android:icon="@drawable/acm_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/acm_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.LoadingActivity"
+            android:label="@string/title_activity_loading"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.HomePage"
+            android:label="iACM"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.events"
+            android:label="Events"
+            android:theme="@style/AppTheme"/>
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.Projects"
+            android:label="Projects" />
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.About"
+            android:label="About" />
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.Contacts"
+            android:label="Contacts" />
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.Meetings"
+            android:label="Scheduled Meetings" />
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.Images"
+            android:label="ACM Gallery" />
+        <activity android:name="com.NITK.Apoorva.EventManager.profile" />
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.SignUpActivity"
+            android:label="Sign-Up"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.LoginActivity"
+            android:label="Log In"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.ResetPasswordActivity"
+            android:label="Reset Password"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.AdminPortal"
+            android:label="@string/title_activity_admin_portal"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.LeaderBoard"
+            android:label="Leaderboard" />
+        <activity
+            android:name="com.NITK.Apoorva.EventManager.Attendees"
+            android:label="@string/title_activity_attendees"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name="com.NITK.Apoorva.EventManager.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+            <!--
+     Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+            -->
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_icon"
+                android:resource="@drawable/acm_logo" />
+            <!--
+                 Set color used with incoming notification messages. This is used when no color is set for the incoming
+                 notification message. See README(https://goo.gl/6BKBk7) for more.
+            -->
+            <meta-data
+                android:name="com.google.firebase.messaging.default_notification_color"
+                android:resource="@color/colorAccent" />
+        </service>
+    </application>
+
+</manifest>
